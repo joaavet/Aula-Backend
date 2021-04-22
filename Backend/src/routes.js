@@ -12,6 +12,7 @@ const routes = express.Router();
 //PUT ==> Usado apra atualização -- recebe parametro tanto query, post -- UPDATE
 //DELETE ==> Usado para exclusão.... parametro sao via query --- Delete
 
+
 routes.get('/', (req, res) => {
   return res.json({message : "pagina principal"})
 }); 
