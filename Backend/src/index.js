@@ -6,7 +6,7 @@ const routes = require('./routes')
 
 const app = express()
 
-mongoose.connect('',{
+mongoose.connect('mongodb+srv://alunojoao:21252423@cluster0.i7q7c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -15,6 +15,6 @@ mongoose.connect('',{
 app.use(express.json())   
 app.use(routes)
 
-app.listen(3000)
+app.listen(3030)
 
-console.log("servidor rodando no end: http://localhost:3000")
+console.log("servidor rodando no end: http://localhost:3030")
